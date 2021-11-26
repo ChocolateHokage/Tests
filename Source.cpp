@@ -1,16 +1,16 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <ctime>
 using namespace std;
 
 int main() {
 	setlocale(0, "");
-	//сортировка
+	//СЃРѕСЂС‚РёСЂРѕРІРєР°
 	int arr1[7]{};
 	int buf = 0;
 	for (int i = 6; i >-1; i--) {
 		arr1[i] = rand() % 10 + 1;
 	}
-	//сортировка по возрастанию
+	//СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 	for (int i = 0; i < 7; i++) {
 		for (int j = 0; j < 6-i; j++) {
 			if (arr1[j] > arr1[j + 1]) {
@@ -23,7 +23,7 @@ int main() {
 	for (int i = 0; i < 7; i++) {
 		cout << arr1[i] << endl;
 	}
-	//сортировка по убыванию
+	//СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СѓР±С‹РІР°РЅРёСЋ
 	cout << endl;
 	for (int i = 0; i < 7; i++) {
 		for (int j = 0; j < 6 - i; j++) {
@@ -40,15 +40,15 @@ int main() {
 
 
 
-	//Шахматная доска
+	//РЁР°С…РјР°С‚РЅР°СЏ РґРѕСЃРєР°
 	char c1;
 	char c2;
-	cout << "Текстура 1: ";
+	cout << "РўРµРєСЃС‚СѓСЂР° 1: ";
 	cin >> c1;
-	cout << "\nТекстура 2: ";
+	cout << "\nРўРµРєСЃС‚СѓСЂР° 2: ";
 	cin >> c2;
 	int size = 0;
-	cout << "\nРазмер: ";
+	cout << "\nР Р°Р·РјРµСЂ: ";
 	cin >> size;
 	for (int j = 1; j <= size; j++) {
 		for (int i = 1; i <= size; i++) {
